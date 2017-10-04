@@ -1,4 +1,4 @@
-#**Traffic Sign Recognition** 
+# **Traffic Sign Recognition** 
 
 
 **Build a Traffic Sign Recognition Project**
@@ -25,12 +25,12 @@ The goals / steps of this project are the following:
 [image9]: ./test_set/featuremap.png "Featuremap"
 
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
 ### Writeup / README
 
-[project code](https://github.com/nitikeshrock/Traffic_Sign_Classifier/blob/master/Traffic_Sign_Classifier.ipynb)
+[project code](https://github.com/nitikeshrock/Traffic_Sign_Classifier/blob/master/Traffic_Sign_Classifier_NINET.ipynb)
 
 ### Data Set Summary & Exploration
 
@@ -129,10 +129,12 @@ If an iterative approach was chosen:
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
 If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+* **What architecture was chosen?** - Created my own merging VGG and Inception model
+* **Why did you believe it would be relevant to the traffic sign application?**
+    Inception and VGG16 model has a very good accurcy over other LeNET in image classification. The standard Inception and VGG16 model has input image size 246x246x3. So I modified the network according to the size of our traffic sign images (32x32x1) 
+
+* **How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?**
+    The accuracy on test set as well as on validation set is above 0.93 which denotes that the accuracy of model is performing well for this project.
 
 ### Test a Model on New Images
 
